@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace DAMS.Client.Views
 {
     /// <summary>
@@ -19,6 +20,7 @@ namespace DAMS.Client.Views
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

@@ -41,3 +41,12 @@ C:\Users\WizTech\Desktop\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\refi
 C:\Users\WizTech\Desktop\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client.pdb
 C:\Users\WizTech\Desktop\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client.genruntimeconfig.cache
 C:\Users\WizTech\Desktop\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\ref\DAMS.Client.dll
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client.csproj.AssemblyReference.cache
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\Views\MainWindow.g.cs
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\App.g.cs
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client_MarkupCompile.cache
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client_MarkupCompile.lref
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client.dll
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\refint\DAMS.Client.dll
+D:\DAMS\DAMS\DAMS.Client\obj\Debug\net10.0-windows7.0\DAMS.Client.pdb

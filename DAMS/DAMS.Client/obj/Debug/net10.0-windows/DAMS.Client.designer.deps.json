@@ -14,6 +14,49 @@
           }
         }
       },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2024.12.0.0"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2024.12.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.WpfExtensions/4.11.0.20250507": {
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507"
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.WpfExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/10.0.2": {
         "runtimeTargets": {
           "runtimes/android-arm/native/libSystem.IO.Ports.Native.so": {
@@ -212,6 +255,27 @@
       "sha512": "sha512-hGoxVFImyP2UC/vyaBjS3ZCLEqn3nqDWOfiePUfSTPpI4EhF4xUe6VnQ5W6m9oFK/6unKAaWQZh89WE+I31Spw==",
       "path": "nmodbus4/2.1.0",
       "hashPath": "nmodbus4.2.1.0.nupkg.sha512"
+    },
+    "OpenCvSharp4/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+      "path": "opencvsharp4/4.11.0.20250507",
+      "hashPath": "opencvsharp4.4.11.0.20250507.nupkg.sha512"
+    },
+    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "hashPath": "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512"
+    },
+    "OpenCvSharp4.WpfExtensions/4.11.0.20250507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MU5V7bULZcGFPjHnOBw1VLwlVKSuEqCPpCP2JAYj/m7bD8ZWNWB1jFNW2OjnonCF01imcTJyeESO7ZDSxDmq8g==",
+      "path": "opencvsharp4.wpfextensions/4.11.0.20250507",
+      "hashPath": "opencvsharp4.wpfextensions.4.11.0.20250507.nupkg.sha512"
     },
     "runtime.android-arm.runtime.native.System.IO.Ports/10.0.2": {
       "type": "package",

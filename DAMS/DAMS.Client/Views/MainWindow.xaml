@@ -269,6 +269,9 @@ Style="{StaticResource ValueTextStyle}"/>
             <StackPanel>
 
                 <TextBlock Grid.Row="0" Text="Camera" Style="{StaticResource SectionTitleStyle}" />
+                <Viewbox Stretch="Uniform">
+            <Image Source="{Binding Camera.CameraFrame}" />
+        </Viewbox>
 
             </StackPanel>
             </Border>

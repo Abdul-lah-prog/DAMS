@@ -62,7 +62,7 @@ namespace DAMS.Client.ViewModels
 
         public WeatherStationViewModel()
         {
-            var modbus = new ModbusRtuService("COM3",9600,8, Parity.Even, StopBits.One);
+            var modbus = new ModbusRtuService("COM11",9600,8, Parity.Even, StopBits.One);
             _service = new WeatherStationService(modbus);
 
             _timer = new DispatcherTimer
@@ -74,11 +74,11 @@ namespace DAMS.Client.ViewModels
             _timer.Start();
         }
 
-        private void Timer_Tick(object? sender, EventArgs e)
+        private async void Timer_Tick(object? sender, EventArgs e)
         {
             try
             {
-                _data = _service.ReadAll();
+                _data = await Task.Run(() => _service.ReadAll());
 
                 OnPropertyChanged(nameof(WindSpeed));
                 OnPropertyChanged(nameof(WindDirection));

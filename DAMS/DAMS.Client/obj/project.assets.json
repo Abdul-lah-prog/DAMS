@@ -15,6 +15,59 @@
           }
         }
       },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.WpfExtensions/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.WpfExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.WpfExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/10.0.2": {
         "type": "package",
         "runtimeTargets": {
@@ -1186,6 +1239,59 @@
         "nmodbus4.nuspec"
       ]
     },
+    "OpenCvSharp4/4.11.0.20250507": {
+      "sha512": "j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+      "type": "package",
+      "path": "opencvsharp4/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "sha512": "3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll"
+      ]
+    },
+    "OpenCvSharp4.WpfExtensions/4.11.0.20250507": {
+      "sha512": "MU5V7bULZcGFPjHnOBw1VLwlVKSuEqCPpCP2JAYj/m7bD8ZWNWB1jFNW2OjnonCF01imcTJyeESO7ZDSxDmq8g==",
+      "type": "package",
+      "path": "opencvsharp4.wpfextensions/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.WpfExtensions.dll",
+        "lib/net48/OpenCvSharp.WpfExtensions.xml",
+        "lib/net6.0/OpenCvSharp.WpfExtensions.dll",
+        "lib/net6.0/OpenCvSharp.WpfExtensions.xml",
+        "opencvsharp4.wpfextensions.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.wpfextensions.nuspec"
+      ]
+    },
     "runtime.android-arm.runtime.native.System.IO.Ports/10.0.2": {
       "sha512": "iv4A6c1a0pBn8vdbi86vfbcgSmYNLcv++EUqraO46JS4VZatJFIr3VMExUoulAZJQbL9JNl/qHSYX/1SSNTN9Q==",
       "type": "package",
@@ -1742,27 +1848,30 @@
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
       "NModbus4 >= 2.1.0",
+      "OpenCvSharp4 >= 4.11.0.20250507",
+      "OpenCvSharp4.WpfExtensions >= 4.11.0.20250507",
+      "OpenCvSharp4.runtime.win >= 4.11.0.20250507",
       "System.IO.Ports >= 10.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WizTech\\.nuget\\packages\\": {}
+    "C:\\Users\\Abdullah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
+      "projectUniqueName": "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
       "projectName": "DAMS.Client",
-      "projectPath": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
-      "packagesPath": "C:\\Users\\WizTech\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\obj\\",
+      "projectPath": "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
+      "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
+      "outputPath": "D:\\DAMS\\DAMS\\DAMS.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WizTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net10.0-windows7.0"
+        "net10.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1770,7 +1879,7 @@
       },
       "frameworks": {
         "net10.0-windows7.0": {
-          "targetAlias": "net10.0-windows7.0",
+          "targetAlias": "net10.0-windows",
           "projectReferences": {}
         }
       },
@@ -1788,11 +1897,23 @@
     },
     "frameworks": {
       "net10.0-windows7.0": {
-        "targetAlias": "net10.0-windows7.0",
+        "targetAlias": "net10.0-windows",
         "dependencies": {
           "NModbus4": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "OpenCvSharp4": {
+            "target": "Package",
+            "version": "[4.11.0.20250507, )"
+          },
+          "OpenCvSharp4.WpfExtensions": {
+            "target": "Package",
+            "version": "[4.11.0.20250507, )"
+          },
+          "OpenCvSharp4.runtime.win": {
+            "target": "Package",
+            "version": "[4.11.0.20250507, )"
           },
           "System.IO.Ports": {
             "target": "Package",

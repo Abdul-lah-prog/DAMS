@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj": {}
+    "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj": {
+    "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
+        "projectUniqueName": "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
         "projectName": "DAMS.Client",
-        "projectPath": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
-        "packagesPath": "C:\\Users\\WizTech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WizTech\\Desktop\\DAMS\\DAMS\\DAMS.Client\\obj\\",
+        "projectPath": "D:\\DAMS\\DAMS\\DAMS.Client\\DAMS.Client.csproj",
+        "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
+        "outputPath": "D:\\DAMS\\DAMS\\DAMS.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\WizTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net10.0-windows7.0"
+          "net10.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,7 +26,7 @@
         },
         "frameworks": {
           "net10.0-windows7.0": {
-            "targetAlias": "net10.0-windows7.0",
+            "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
         },
@@ -44,11 +44,23 @@
       },
       "frameworks": {
         "net10.0-windows7.0": {
-          "targetAlias": "net10.0-windows7.0",
+          "targetAlias": "net10.0-windows",
           "dependencies": {
             "NModbus4": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.11.0.20250507, )"
+            },
+            "OpenCvSharp4.WpfExtensions": {
+              "target": "Package",
+              "version": "[4.11.0.20250507, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.11.0.20250507, )"
             },
             "System.IO.Ports": {
               "target": "Package",
