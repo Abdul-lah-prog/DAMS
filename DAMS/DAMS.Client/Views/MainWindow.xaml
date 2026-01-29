@@ -1,0 +1,278 @@
+﻿<Window x:Class="DAMS.Client.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:DAMS.Client.ViewModels"
+        Title="DAMS - Monitoring System"
+        WindowState="Maximized"
+        ResizeMode="CanResize"
+
+        Background="#F4F6F8">
+
+    <Window.DataContext>
+        <vm:MainDashboardViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+
+        <!-- Section Titles -->
+        <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+           
+        </Style>
+
+        <!-- Sensor Values -->
+        <Style x:Key="ValueTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="0,1"/>
+        </Style>
+
+        <!-- Small Info -->
+        <Style x:Key="SmallInfoStyle" TargetType="TextBlock">
+          
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+
+    </Window.Resources>
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- WEATHER -->
+    <Border Grid.Row="0" Grid.Column="0" Margin="10" Padding="15"
+        Background="#C8D2DC"
+        BorderBrush="#9AA7B2"
+        BorderThickness="1"
+        CornerRadius="12">
+        
+    
+
+        <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+             <TextBlock Grid.Row="0" Text="Weather Station" Style="{StaticResource SectionTitleStyle}" />
+
+        
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- LEFT COLUMN -->
+                    <StackPanel Grid.Column="0" Margin="10,0">
+
+                      
+
+                    <TextBlock Text="{Binding Weather.WindSpeed, StringFormat='Wind Speed: {0:F2} m/s'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.WindDirection, StringFormat='Wind Direction: {0:F0}°'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.AirTemperature, StringFormat='Air Temperature: {0:F1} °C'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.AirHumidity, StringFormat='Humidity: {0:F1} %'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+                    </StackPanel>
+
+                    <!-- RIGHT COLUMN -->
+                    <StackPanel Grid.Column="1" Margin="10,0">
+
+                        <TextBlock Text="{Binding Weather.AirPressure, StringFormat='Air Pressure: {0:F0} hPa'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.Rainfall, StringFormat='Rainfall: {0:F1} mm'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.SolarRadiation, StringFormat='Solar Radiation: {0:F0} W/m²'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.UVRadiation, StringFormat='UV Index: {0:F1}'}"
+                   Style="{StaticResource ValueTextStyle}"/>
+
+                    <TextBlock Text="{Binding Weather.Timestamp, StringFormat='Updated: {0:HH:mm:ss}'}"
+                   Style="{StaticResource SmallInfoStyle}"/>
+
+                </StackPanel>
+                    </Grid>
+        </Grid>
+
+
+  
+           
+
+    </Border>
+        
+
+    <!-- POWER -->
+        <Border Grid.Row="0" Grid.Column="1" Margin="10" Padding="15"
+     Background="#C8D2DC"
+     BorderBrush="#9AA7B2"
+     BorderThickness="1"
+     CornerRadius="12">
+         
+
+                <Grid Margin="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <TextBlock Grid.Row="0" Text="Power Meter" Style="{StaticResource SectionTitleStyle}" />
+
+
+                    <Grid Grid.Row="1">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- LEFT COLUMN -->
+                        <StackPanel Grid.Column="0" Margin="10,0">
+
+
+
+                            <TextBlock Text="label:  "
+               Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                        </StackPanel>
+
+                        <!-- RIGHT COLUMN -->
+                        <StackPanel Grid.Column="1" Margin="10,0">
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+
+
+     
+        </Border>
+
+            <!-- DATA RECORDER -->
+        <Border Grid.Row="1" Grid.Column="0" Margin="10" Padding="15"
+     Background="#C8D2DC"
+     BorderBrush="#9AA7B2"
+     BorderThickness="1"
+     CornerRadius="12">
+ 
+
+                <Grid Margin="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <TextBlock Grid.Row="0" Text="Data Recorder" Style="{StaticResource SectionTitleStyle}" />
+
+
+                    <Grid Grid.Row="1">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- LEFT COLUMN -->
+                        <StackPanel Grid.Column="0"  HorizontalAlignment="Left" Margin="10,0">
+
+
+
+                            <TextBlock Text="label: 5555555 "
+               Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                        
+                        </StackPanel>
+
+                        <!-- RIGHT COLUMN -->
+                        <StackPanel Grid.Column="1"  HorizontalAlignment="Left" Margin="10,0">
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                            <TextBlock Text="label:  "
+Style="{StaticResource ValueTextStyle}"/>
+                         
+
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+
+
+     
+        </Border>
+
+            <!-- CAMERAS -->
+        <Border Grid.Row="1" Grid.Column="1" Margin="10" Padding="15"
+     Background="#C8D2DC"
+     BorderBrush="#9AA7B2"
+     BorderThickness="1"
+     CornerRadius="12">
+            <StackPanel>
+
+                <TextBlock Grid.Row="0" Text="Camera" Style="{StaticResource SectionTitleStyle}" />
+
+            </StackPanel>
+            </Border>
+
+        </Grid>
+
+</Window>
